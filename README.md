@@ -1,7 +1,6 @@
-#Jormungandr systemd configuration
+# Jormungandr systemd configuration
 
-#To run Jormungandr in the background when system starts 
- do the following in the terminal
+# To run Jormungandr in the background when system starts (do the following in the terminal)
 
 Paste the contents of jormun.service here
 sudo nano /etc/systemd/system/jormun.service
