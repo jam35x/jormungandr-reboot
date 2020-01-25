@@ -5,7 +5,7 @@
 Paste the contents of jormun.service here:
 sudo nano /etc/systemd/system/jormun.service
 
-Enable systemd service:
+Enable systemd service to start when system starts:
 sudo systemctl enable jormun
 
 start jormungandr in background:
@@ -21,7 +21,7 @@ sudo systemctl restart jormun
 Paste the contents of jormun_reboot.service here:
 sudo nano /etc/systemd/system/jormun_reboot.service
 
-Enable systemd service:
+Enable systemd service to start when system starts:
 sudo systemctl enable jormun_reboot
 
 start jormungandr restart script in background:
