@@ -11,6 +11,12 @@ WorkingDirectory=/<PATH TO JORMUNGANDR DIRECTORY>/
 # Add seceret when running as leader node (pool node)
 ExecStart=<ABSOLUTE PATH TO JORMUNGANDR DIRECTORY>/jormungandr --genesis-block-hash 8e4d2a343f3dcf9330ad9035b3e8d168e6728904262f2c434a4f8f934ec7b676 --config ./stakepool-config.yaml
 
+# Output to journald
+# to view type journalctl on terminal
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=jormungandr_reboot
+
 LimitNOFILE=8192
 
 Restart=on-failure
