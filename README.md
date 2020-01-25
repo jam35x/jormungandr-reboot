@@ -1,2 +1,2 @@
 # jormungandr-reboot
-jormungandr reboot bash script
+jormungandr reboot shell script: restart systemctl service on node stuck
