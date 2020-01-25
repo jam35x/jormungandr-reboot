@@ -1,0 +1,22 @@
+[Unit]
+Description=jormungandr node reboot script
+After=multi-user.target
+
+[Service]
+Type=simple
+
+WorkingDirectory=/<PATH TO JCLI & JORMUNGANDR>/
+
+ExecStart=/<ABSOLUTE-PATH-TO-SCRIPT>/restart.sh
+
+# Output to journald
+# to view type journalctl on terminal
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=jormungandr_reboot
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
