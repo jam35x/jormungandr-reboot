@@ -27,7 +27,7 @@ sudo systemctl restart jormun
 Paste the contents of [jormun_reboot.service](jormun_reboot.service) here:
 ```sudo nano /etc/systemd/system/jormun_reboot.service```
 
-Copy the [restart.sh](restart.sh) to your system and edit the path in jormun_reboot.service file.
+Copy the [restart.sh](restart.sh) script to your system and edit the path in jormun_reboot.service file.
 
 Enable systemd service to start when system starts:
 ```sudo systemctl enable jormun_reboot```
