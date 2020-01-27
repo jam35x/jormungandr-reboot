@@ -1,12 +1,12 @@
 # Jormungandr systemd configuration
 
-## To run Jormungandr in the background when system starts (do the following in the terminal)
+## To run Jormungandr in the background when machine starts (do the following in the terminal)
 
 Paste the contents of [jormun.service](jormun.service) here:
 ```sudo nano /etc/systemd/system/jormun.service```
 and edit the path.
 
-Enable systemd service to start when system starts:
+Enable systemd service to start when machine starts:
 ```sudo systemctl enable jormun```
 
 start jormungandr in background:
@@ -27,9 +27,9 @@ sudo systemctl restart jormun
 Paste the contents of [jormun_reboot.service](jormun_reboot.service) here:
 ```sudo nano /etc/systemd/system/jormun_reboot.service```
 
-Copy the [restart.sh](restart.sh) script to your system and edit the path in jormun_reboot.service file.
+Copy the [restart.sh](restart.sh) script to your machine and edit the path in jormun_reboot.service file.
 
-Enable systemd service to start when system starts:
+Enable systemd service to start when machine starts:
 ```sudo systemctl enable jormun_reboot```
 
 start jormungandr restart script in background:
